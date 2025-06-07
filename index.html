@@ -1,0 +1,200 @@
+<!--Welcome too the app page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clock tab type site with apps" />
+    <title>The News Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="/images"><!--No images-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9385480445320666"
+     crossorigin="anonymous"></script>
+</head>
+<body  id="page-top app-body" onload=display_ct();>
+  <h1 class="hero-header">NEWS PAGE</h1>
+  <div id="clock">
+    <div>
+        <p id="ct"></p>
+    </div>
+  </div>
+  <h6 id="app-comment">The screen will stay awake while this page is active. Set me as your home page.</h6>
+  <div class="bg-rainbow"></div>
+  <div class="bg-rainbow bg2-rainbow"></div>
+  <div class="bg-rainbow bg3-rainbow"></div>
+  <!--JS for the clock function-->
+  <script>
+    // Check if the Wake Lock API is supported
+if ('wakeLock' in navigator) {
+  let wakeLock = null;
+
+  const requestWakeLock = async () => {
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+      console.log('Screen wake lock acquired');
+    } catch (err) {
+      console.error(`Wake Lock request failed: ${err.name}, ${err.message}`);
+    }
+  };
+
+  const releaseWakeLock = () => {
+    if (wakeLock) {
+      wakeLock.release().then(() => {
+        console.log('Screen wake lock released');
+        wakeLock = null;
+      });
+    }
+  };
+
+  // Request wake lock when the page is active
+  requestWakeLock();
+
+  // Optionally, release wake lock when the page is hidden
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      requestWakeLock();
+    } else {
+      releaseWakeLock();
+    }
+  });
+} else {
+  console.log('Wake Lock API not supported on this browser.');
+}
+
+  </script>
+  
+  <!--The news link colums. 3 x 15
+  <div class="news-grid">
+    <Column 1
+    <p class="news-item news-item-heading">Sports Pages</p>
+    <p class="news-item news-item-heading">Money</p>
+    <p class="news-item news-item-heading">Entertainment</p>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.outkick.com/">Outkick the Coverage</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.zerohedge.com/">Zero Hedge</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.tmz.com/">TMZ</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.espn.com/">ESPN</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.foxbusiness.com/">Fox Business</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.crazydaysandnights.net/">Crazy Days and Nights</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.foxsports.com/">Fox Sports</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.fool.com/">Motley Fool</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.thehollywoodgossip.com/">The Hollywood Gossip</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.economist.com/">The Economist</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.dailymail.co.uk/usshowbiz/index.html">Daily Mail</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.cnet.com/">CNet</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://hikingguy.com/">Hiking Guy</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.technewsworld.com/">Tech News World</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.southernliving.com/">Southern Living</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.wired.com/">Wired</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.gq.com/">GQ</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.coasttocoastam.com/">Coast To Coast A.M.</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://www.pcmag.com/">PC Mag</a>
+    <a class="news-item" rel="noopener" target="_blank" href="https://people.com/">People Magazine</a>
+    -->
+    <div class="container">
+    <!-- Generate 6 columns -->
+        <div class="column">
+            <h2><i>BIG NEWS</i></h2>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+        </div>
+
+        <div class="column">
+            <h2>MONEY</h2>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.zerohedge.com/">ZERO HEDGE</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+        </div>
+
+        <div class="column">
+            <h2>Title 3</h2>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 1</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 2</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 3</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 4</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 5</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 6</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>tem 7</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 8</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 9</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 10</div>
+        </div>
+
+        <div class="column">
+            <h2><i>SPORTS</i></h2>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.outkick.com/">OUTKICK THE COVERAGE</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.bleacherreport.com/">THE BLEACHER REPORT</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 3</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 4</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 5</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 6</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 7</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 8</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 9</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 10</div>
+        </div>
+
+        <div class="column">
+            <h2><i>ENTERTAINMENT</i></h2>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 1</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 2</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 3</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 4</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 5</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 6</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 7</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 8</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 9</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 10</div>
+        </div>
+
+        <div class="column">
+            <h2><i>STRANGE NEWS</i></h2>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://allthatsinteresting.com/">ALL THAT IS INTERESTING</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://paranormaldailynews.com/">PARANORMAL NEWS DAILY</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 4</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 5</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 6</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 7</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 8</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 9</div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a>Item 10</div>
+        </div>
+
+    </div>
+
+
+  </div>
+</body>
+<footer  class="py-5 bg-black">
+  <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; News 2024.</p></div>
+  <div class="container px-5"><p class="m-0 text-center text-white small">Find me on <a href="https://www.linkedin.com/in/shelby-ashburn-633ba7223" rel="noopener" target="_blank">LinkedIn</a></p></div>   
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
+</html>
