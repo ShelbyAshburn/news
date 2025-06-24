@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clock tab type site with apps" />
+    <meta name="description" content="All of the news in one place, breaking news" />
     <title>The News Page</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -19,16 +19,15 @@
      crossorigin="anonymous"></script>
 </head>
 <body  id="page-top app-body" onload=display_ct();>
-  <h1 class="hero-header">NEWS PAGE</h1>
+  <h1 class="hero-header"><b>NEWS PAGE</b></h1>
+  <!--A clock that will prevent screensavers and monitor sleep modes-->
   <div id="clock">
     <div>
         <p id="ct"></p>
     </div>
   </div>
+  <!--Sub heading under the time/date-->
   <h6 id="app-comment">The screen will stay awake while this page is active. Set me as your home page.</h6>
-  <div class="bg-rainbow"></div>
-  <div class="bg-rainbow bg2-rainbow"></div>
-  <div class="bg-rainbow bg3-rainbow"></div>
   <!--JS for the clock function-->
   <script>
     // Check if the Wake Lock API is supported
@@ -70,18 +69,10 @@ if ('wakeLock' in navigator) {
 
   </script>
   
-  <!--The news link colums. 3 x 15
-  <div class="news-grid">
-    <Column 1
+  <!--
     
     
-    <a class="news-item" rel="noopener" target="_blank" href="https://www.tmz.com/">TMZ</a>
-    <a class="news-item" rel="noopener" target="_blank" href="https://www.espn.com/">ESPN</a>
-    <a class="news-item" rel="noopener" target="_blank" href="https://www.crazydaysandnights.net/">Crazy Days and Nights</a>
-    <a class="news-item" rel="noopener" target="_blank" href="https://www.foxsports.com/">Fox Sports</a>
     <a class="news-item" rel="noopener" target="_blank" href="https://www.thehollywoodgossip.com/">The Hollywood Gossip</a>
-    <a class="news-item" rel="noopener" target="_blank" href="https://www.dailymail.co.uk/usshowbiz/index.html">Daily Mail</a>
-    
     
     <a class="news-item" rel="noopener" target="_blank" href="https://www.southernliving.com/">Southern Living</a>
    
@@ -112,12 +103,12 @@ if ('wakeLock' in navigator) {
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.zerohedge.com/">ZERO HEDGE</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.fool.com/">THE MOTLEY FOOL</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.economist.com/">THE ECONOMIST</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>     
         </div>
 
         <div class="column">
@@ -126,12 +117,12 @@ if ('wakeLock' in navigator) {
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.cnet.com/">CNET</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.technewsworld.com/">TECN NEWS WORLD</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.wired.com/">WIRED</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div> 
         </div>
 
         <div class="column">
@@ -140,26 +131,26 @@ if ('wakeLock' in navigator) {
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.bleacherreport.com/">THE BLEACHER REPORT</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.foxsports.com/">FOX SPORTS</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.espn.com/">ESPN</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
         </div>
 
         <div class="column">
             <h2><i>ENTERTAINMENT</i></h2>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.crazydaysandnights.net/">CRAZY DAYS AND NIGHTS</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.tmz.com/">TMZ</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://perezhilton.com/">PEREZ HILTON</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.thehollywoodgossip.com/">THE HOLLYWOOD GOSSIP</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.gq.com/">GQ</a></div>           
         </div>
 
         <div class="column">
@@ -167,13 +158,13 @@ if ('wakeLock' in navigator) {
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://allthatsinteresting.com/">ALL THAT IS INTERESTING</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://paranormaldailynews.com/">PARANORMAL NEWS DAILY</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.odditycentral.com/">ODDITY CENTRAL</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="">PH</a></div>          
         </div>
 
     </div>
@@ -181,10 +172,14 @@ if ('wakeLock' in navigator) {
 
   </div>
 </body>
-<footer  class="py-5 bg-black">
+<footer  class="py-5 bg-footer">
   <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; News 2024.</p></div>
   <div class="container px-5"><p class="m-0 text-center text-white small">Find me on <a href="https://www.linkedin.com/in/shelby-ashburn-633ba7223" rel="noopener" target="_blank">LinkedIn</a></p></div>   
 </footer>
+<!--This is a bar at the bottom to allow for the ad at the bottom to not block the footer-->
+<div class="ad-space-cusion">
+  <container></container>
+</div>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->

@@ -33,7 +33,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #fff;/*font white*/
-  --bs-body-bg: #011a2e;/*preferd background color*/
+  --bs-body-bg: #011a2e;/*preferd background color. This is dark blue*/
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -70,7 +70,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: var(--bs-gray-300);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -10893,7 +10893,8 @@ header.masthead .bg-circle-4 {
 /*changes to non-bootstrap classes and id's*/
 /*Top of page title header*/
 .hero-header{
-    color:#fd812f;/*My orange var with gradient*/
+    color: #fd812f;/*My orange #fd812f*/
+    font-family: "Georgia" , "Times New Roman";
     font-size: 9.0em;
     font-style:italic;
     text-align: center;
@@ -10902,17 +10903,18 @@ header.masthead .bg-circle-4 {
     text-decoration: underline;
 }
 #ct{
+  color:black;
   text-align:center;
   font-size: 4.0em;
 } 
 #app-comment{
-  color:white;
+  color:black;
   text-align:center;
 }
 /*Wave effect on apps page*/
 .bg-rainbow {
   animation:slide 20s ease-in-out infinite alternate;
-  background-image: linear-gradient(-45deg, #fcfcfc 45%, #d1d1d1 50%);/*first color is the bottom*/
+  background-image: linear-gradient(-45deg, var(--bs-gray-300)  48%, white 50%);/*first color is the bottom #c3d2ec*/
   bottom:0;
   left:-50%;
   opacity:.3;
@@ -10943,7 +10945,7 @@ header.masthead .bg-circle-4 {
 
 /*Hover effects on the news links*/
 .box:hover{
-  color: orange;
+  color: #0260ab;
 }
 /*Styles for each column container*/
 .container {
@@ -10962,14 +10964,14 @@ header.masthead .bg-circle-4 {
 }
 /*Column headings*/
 h2 {
-    color: white;
+    color: black;
     text-align: center;
     margin-bottom: 10px;
 }
 /*Styles for each item in the column*/
 .box {
     padding: 10px;
-    color: white;
+    color: black;
     text-align: center;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -10983,5 +10985,19 @@ h2 {
     .column {
         width: 90%;
     }
+}
+
+.bg-footer{
+  color: #000;
+}
+
+.ad-space-cusion{
+  background-color: green;
+  border: 2px solid black;
+  margin-top: 200px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
