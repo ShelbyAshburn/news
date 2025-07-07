@@ -68,9 +68,9 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: var(--bs-body-bg);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-gray-300);
+  background-color: #11ffee00;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -10892,14 +10892,15 @@ header.masthead .bg-circle-4 {
 }
 /*changes to non-bootstrap classes and id's*/
 /*Top of page title header*/
+
 .hero-header{
-    color: #fd812f;/*My orange #fd812f*/
+    color: #fb6f04;/*My orange #fd812f or #fb6f04*/
     font-family: "Georgia" , "Times New Roman";
     font-size: 9.0em;
     font-style:italic;
     text-align: center;
     font-weight: bold;
-    text-shadow: 5px 5px #0260ab;/*My blue var with gradient dark blue #011a2e*/
+    text-shadow: 5px 5px #0490fb;/*My blue #0260ab or #0490fb var with gradient dark blue #011a2e*/
     text-decoration: underline;
 }
 #ct{
@@ -10914,10 +10915,10 @@ header.masthead .bg-circle-4 {
 /*Wave effect on apps page*/
 .bg-rainbow {
   animation:slide 20s ease-in-out infinite alternate;
-  background-image: linear-gradient(-45deg, var(--bs-gray-300)  48%, white 50%);/*first color is the bottom #c3d2ec*/
+  background-image: linear-gradient(-45deg, #4373bc  5%, var(--bs-gray-300) 50%);/*first color is the bottom #c3d2ec*/
   bottom:0;
   left:-50%;
-  opacity:.3;
+  opacity:.7;/*.3*/
   position:fixed;
   right:-50%;
   top:0;
