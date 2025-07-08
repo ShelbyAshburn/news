@@ -10894,28 +10894,28 @@ header.masthead .bg-circle-4 {
 /*Top of page title header*/
 
 .hero-header{
-    color: #fb6f04;/*My orange #fd812f or #fb6f04*/
+    color: #2e2e2e;/*My orange #fd812f or #fb6f04*/
     font-family: "Georgia" , "Times New Roman";
     font-size: 9.0em;
     font-style:italic;
     text-align: center;
     font-weight: bold;
-    text-shadow: 5px 5px #0490fb;/*My blue #0260ab or #0490fb var with gradient dark blue #011a2e*/
+    text-shadow: 5px 5px #1a73e8;/*Royal blue with gradient dark blue #011a2e*/
     text-decoration: underline;
 }
 #ct{
-  color:black;
+  color: #2e2e2e; /*charcoal*/
   text-align:center;
   font-size: 4.0em;
 } 
 #app-comment{
-  color:black;
+  color: #2e2e2e; /*charcoal*/
   text-align:center;
 }
 /*Wave effect on apps page*/
 .bg-rainbow {
   animation:slide 20s ease-in-out infinite alternate;
-  background-image: linear-gradient(-45deg, #4373bc  5%, var(--bs-gray-300) 50%);/*first color is the bottom #c3d2ec*/
+  background-image: linear-gradient(-45deg, #fdf2e9  48%, #f9f9f9 50%);/*first color is the bottom #c3d2ec*/
   bottom:0;
   left:-50%;
   opacity:.7;/*.3*/
@@ -10946,7 +10946,7 @@ header.masthead .bg-circle-4 {
 
 /*Hover effects on the news links*/
 .box:hover{
-  color: #0260ab;
+  color: #0f4c81; /*deep blue*/
 }
 /*Styles for each column container*/
 .container {
@@ -10965,14 +10965,14 @@ header.masthead .bg-circle-4 {
 }
 /*Column headings*/
 h2 {
-    color: black;
+    color: #2e2e2e; /*charcoal*/
     text-align: center;
     margin-bottom: 10px;
 }
 /*Styles for each item in the column*/
 .box {
     padding: 10px;
-    color: black;
+    color: #1a73e8; /*royal blue*/
     text-align: center;
     margin-bottom: 10px;
     border-radius: 5px;
