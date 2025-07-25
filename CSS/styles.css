@@ -10896,11 +10896,11 @@ header.masthead .bg-circle-4 {
 .hero-header{
     color: #2e2e2e;/*My orange #fd812f or #fb6f04*/
     font-family: "Georgia" , "Times New Roman";
-    font-size: 6.7em;
+    font-size: 6.0em;
     font-style:italic;
     text-align: center;
     font-weight: bold;
-    text-shadow: 5px 5px #1a73e8;/*Royal blue with gradient dark blue #011a2e*/
+    text-shadow: 3px 3px #1a73e8;/*Royal blue. in the future with gradient dark blue #011a2e*/
     text-decoration: underline;
 }
 #ct{
@@ -10979,6 +10979,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    .hero-header{
+      font-size: 4em;
+    }
     .container {
         flex-direction: column;
         align-items: center;
