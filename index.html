@@ -2,7 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="All of the news in one place, breaking news" />
@@ -29,7 +35,7 @@
     </div>
   </div>
   <!--Sub heading under the time/date-->
-  <h6 id="app-comment">Your favorite news all in one place. The screen will stay awake while this page is active. Set as your home page.</h6>
+  <h6 id="app-comment">The screen will stay awake while this page is active.</h6>
   <!--JS for the clock function-->
   <script>
     // Check if the Wake Lock API is supported
@@ -112,13 +118,13 @@ if ('wakeLock' in navigator) {
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.pcmag.com/">PC MAGAZINE</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.cnet.com/">CNET</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.technewsworld.com/">TECN NEWS WORLD</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.wired.com/">WIRED</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://techcrunch.com/">TECH CRUNCH</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://thenextweb.com/">THE NEXT WEB</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://www.techradar.com/">TECH RADAR</a></div>
             <div class="box"><a class="box" rel="noopener" target="_blank" href="https://css-tricks.com/">CSS TRICKS</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://mashable.com/">MASHABLE</a></div>
-            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://gizmodo.com/">GIZMODO</a></div> 
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://games.mashable.com/games/todays-hurdle">HURDLE</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://games.mashable.com/games/daily-crossword">CROSSWORD</a></div>
+            <div class="box"><a class="box" rel="noopener" target="_blank" href="https://games.mashable.com/games/classic-solitaire">SOLITAIRE</a></div> 
         </div>
 
         <div class="column">
@@ -175,7 +181,7 @@ if ('wakeLock' in navigator) {
 </footer>
 <!--This is a bar at the bottom to allow for the ad at the bottom to not block the footer-->
 <div class="ad-space-cusion">
-  <container></container>
+  <div></div>
 </div>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

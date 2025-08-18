@@ -10912,19 +10912,19 @@ header.masthead .bg-circle-4 {
   color: #2e2e2e; /*charcoal*/
   text-align:center;
 }
-/*Wave effect on apps page*/
+/*Wave effect on apps page
 .bg-rainbow {
   animation:slide 20s ease-in-out infinite alternate;
-  background-image: linear-gradient(-45deg, #e0e0e0  48%, #f9f9f9 50%);/*first color is the bottom #c3d2ec*/
+  background-image: linear-gradient(-45deg, #e0e0e0  48%, #f9f9f9 50%);/*first color is the bottom #c3d2ec
   bottom:0;
   left:-50%;
-  opacity:.7;/*.3*/
+  opacity:.7;/*.3
   position:fixed;
   right:-50%;
   top:0;
   z-index:-1;
 }
-
+*/
 .bg2-rainbow {
   animation-direction:alternate-reverse;
   animation-duration:25s;
@@ -10997,8 +10997,6 @@ h2 {
 
 /*not seeing this bar*/
 .ad-space-cusion{
-  background-color: green;
-  border: 2px solid black;
   margin-top: 200px;
   position: sticky;
   bottom: 0;
